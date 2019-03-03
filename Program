@@ -1,0 +1,20 @@
+#This program is sed to automate area calculations of circles and triangles
+
+print('Calc is booting up')
+
+option = raw_input("Which shape would you like to calculate the area for? Enter C for circle or T for triangle: ")
+
+if option == 'C' or 'c' or 'see':
+  radius = float(raw_input("Input radius: "))
+  area = radius**2 * 3.14159 
+  print "Area: %f" % area
+
+elif option == 'T' or 't' or 'tee':
+  base = float(raw_input("Input base: "))
+  height = float(raw_input("Input height: "))
+  area = base * height * 0.5
+  print "Area: %f" % area
+
+else:
+  print "Please follow directions: "
+print ("Exiting...")
